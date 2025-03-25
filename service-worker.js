@@ -1,9 +1,9 @@
 const staticDevCoffee = "listaContatos_1"
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/js/script.js",
+    "/",
+    "/index.html",
+    "/style.css",
+    "/script.js",
 ]
 
 self.addEventListener("install", installEvent => {
