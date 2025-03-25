@@ -1,4 +1,4 @@
-const staticDevCoffee = "listaContatos_1"
+const staticDevCoffee = "listaContatos_v2"
 const assets = [
     "/",
     "/index.html",
