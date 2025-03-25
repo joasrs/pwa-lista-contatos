@@ -84,7 +84,7 @@ document.getElementById('apply-filters').addEventListener('click', () => {
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
-        .register("../service-worker.js")
+        .register("./../service-worker.js")
         .then(res => console.log("service worker registrado"))
         .catch(err => console.log("service worker não registrado", err))
     })
