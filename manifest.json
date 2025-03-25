@@ -1,0 +1,33 @@
+{
+    "name": "Lista de Contatos",
+    "short_name": "Contatos",
+    "description": "Um aplicativo para gerenciar sua lista de contatos.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      
+      {
+        "src": "assets/icon.png", 
+        "sizes": "512x512",
+        "type": "image/png"
+    
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "./assets/screenshots/desktop.png",
+        "sizes": "1280x758",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "./assets/screenshots/mobile.png",
+        "sizes": "418x759",
+        "type": "image/png"
+      }
+    ]
+  }
+  
+  

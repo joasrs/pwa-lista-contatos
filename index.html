@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="./js/script.js">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
+   
+</head>
+<body>
+    <form id="filter-form">
+        <input type="text" id="search-name" placeholder="Buscar por nome">
+        <select id="filter-uf">
+            <option value="">Selecionar todos</option>
+            <option value="SC">SC</option>
+            <option value="PR">PR</option>
+            <option value="SP">SP</option>
+            <option value="AC">AC</option>
+            <option value="RS">RS</option>
+        </select>
+        <button type="button" id="apply-filters">Aplicar Filtros</button>
+    </form>
+
+    <template id="contato-card-template">
+        <style>
+            .card {
+                border: 1px solid #ccc;
+                padding: 16px;
+                margin: 8px;
+                border-radius: 8px;
+                box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+                background-color: rgb(45, 156, 207);
+            }
+            .details {
+                display: none;
+            }
+            .details.show {
+                display: block;
+            }
+        </style>
+        <div class="card">
+            <div class="details">
+                <h2><slot name="nome"></slot></h2>
+                <p><slot name="telefone"></slot></p>
+                <p><slot name="endereco"></slot></p>
+                <p><slot name="cidade"></slot></p>
+                <p><slot name="uf"></slot></p>
+            </div>
+            <button id="toggle-details">Mostrar Detalhes</button>
+        </div>
+    </template>
+
+    <div id="contatos-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
